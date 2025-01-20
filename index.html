@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Fecha y Hora de Llegada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Calculadora de Fecha y Hora de Llegada</h1>
+
+    <div class="form-group">
+      <label for="destination">Destino:</label>
+      <select id="destination">
+        <option value="">Selecciona un destino</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="departureDate">Fecha de salida:</label>
+      <input type="date" id="departureDate">
+    </div>
+
+    <div class="form-group">
+      <label for="departureTime">Hora de salida (HH:MM):</label>
+      <input type="time" id="departureTime">
+    </div>
+
+    <button id="calculateButton">Calcular Fecha y Hora de Llegada</button>
+
+    <div class="result" id="result" style="display: none;">
+      <h2>Fecha y Hora de Llegada:</h2>
+      <p id="arrivalTime"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
